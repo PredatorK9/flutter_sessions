@@ -39,7 +39,13 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     return Scaffold(
       appBar: AppBar(
         bottom: TabBar(
+          indicatorColor: Colors.white,
           controller: controller,
+          tabs: <Widget>[
+            Tab(child: Text("Chats"),),
+            Tab(child: Text("Status"),),
+            Tab(child: Text("Calls"),)
+          ],
         ),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search),
@@ -96,7 +102,7 @@ class WhatsAppCard extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Text(
-                  'Avinash',
+                  'PredatorK9',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                 ),
                 Row(
